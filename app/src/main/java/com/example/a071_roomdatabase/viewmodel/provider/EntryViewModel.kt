@@ -59,7 +59,7 @@ fun Siswa.toDetailSiswa(): DetailSiswa = DetailSiswa(
     id = id,
     nama =name,
     alamat = alamat,
-    telepon = telpon,
+    telpon = telpon,
 )
 
 
