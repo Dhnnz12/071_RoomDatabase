@@ -1,5 +1,6 @@
 package com.example.a071_roomdatabase.view
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -9,16 +10,20 @@ import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.a071_roomdatabase.R
+import com.example.a071_roomdatabase.room.Siswa
 import com.example.a071_roomdatabase.view.route.DestinasiHome
 import com.example.a071_roomdatabase.viewmodel.provider.HomeViewModel
 import com.example.a071_roomdatabase.viewmodel.provider.PenyediaViewModel
@@ -65,6 +70,7 @@ fun HomeScreen(
     }
 }
 
+
 @Composable
 fun BodyHome(
     itemSiswa: List<Siswa>,
@@ -87,3 +93,9 @@ fun BodyHome(
         }
     }
 }
+
+@Composable
+fun ListSiswa(itemSiswa: List<Siswa>, modifier: Modifier) {
+    TODO("Not yet implemented")
+}
+
