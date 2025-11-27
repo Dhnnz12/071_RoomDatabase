@@ -38,7 +38,6 @@ import com.example.a071_roomdatabase.view.route.DestinasiHome
 import com.example.a071_roomdatabase.viewmodel.provider.HomeViewModel
 import com.example.a071_roomdatabase.viewmodel.provider.PenyediaViewModel
 
-private val Siswa.nama: Any
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
