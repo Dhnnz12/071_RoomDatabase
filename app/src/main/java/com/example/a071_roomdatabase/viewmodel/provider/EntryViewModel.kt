@@ -31,13 +31,7 @@ class EntryViewModel (private val repositoriSiswa: RepositoriSiswa): ViewModel()
 }
 
 data class UIStateSiswa(
-    val detailSiswa: DetailSiswa = DetailSiswa(
-        id = TODO(),
-        nama = TODO(),
-        alamat = TODO(),
-        telepon = TODO(),
-        telpon = TODO()
-    ),
+    val detailSiswa: DetailSiswa = DetailSiswa(),
     val isEntryValid: Boolean = false
 )
 

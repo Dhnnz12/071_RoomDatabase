@@ -23,6 +23,7 @@ import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.a071_roomdatabase.R
 import com.example.a071_roomdatabase.view.route.DestinasiEntry
@@ -94,8 +95,6 @@ fun EntrySiswaBody(
         }
     }
 }
-
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormInputSiswa(
@@ -110,7 +109,7 @@ fun FormInputSiswa(
     ){
         OutlinedTextField(
             value = detailSiswa.nama,
-            onValueChange = {onValueChange(detailSiswa.copy(nama=it,)) },
+            onValueChange = {onValueChange(detailSiswa.copy(nama=it)) },
             label = { Text(stringResource(R.string.nama)) },
             modifier = Modifier.fillMaxWidth(),
             enabled = enabled,
@@ -118,7 +117,7 @@ fun FormInputSiswa(
         )
         OutlinedTextField(
             value = detailSiswa.alamat,
-            onValueChange = {onValueChange(detailSiswa.copy(alamat=it,))},
+            onValueChange = {onValueChange(detailSiswa.copy(alamat=it))},
             label = { Text(stringResource(R.string.alamat)) },
             modifier = Modifier.fillMaxWidth(),
             enabled = enabled,
@@ -133,6 +132,7 @@ fun FormInputSiswa(
             enabled = enabled,
             singleLine = true
         )
+
         if (enabled) {
             Text(
                 text = stringResource(R.string.required_field),
@@ -146,5 +146,3 @@ fun FormInputSiswa(
         )
     }
 }
-
-
