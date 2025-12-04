@@ -133,7 +133,6 @@ fun FormInputSiswa(
             enabled = enabled,
             singleLine = true
         )
-
         if (enabled) {
             Text(
                 text = stringResource(R.string.required_field),

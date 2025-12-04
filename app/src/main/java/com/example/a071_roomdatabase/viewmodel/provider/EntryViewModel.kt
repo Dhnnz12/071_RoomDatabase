@@ -46,7 +46,7 @@ data class DetailSiswa(
     val nama: String = "",
     val alamat: String = "",
     val telepon: String = "",
-    val telpon: Any
+    val telpon: String ="",
 )
 
 fun DetailSiswa.toSiswa(): Siswa = Siswa(
